@@ -1,6 +1,6 @@
 import { environment } from "src/environments/environment";
 
-const base_URL = `https://api.rawg.io/api/games?key=${environment.MY_API_KEY}`;
+const base_URL = `https://api.rawg.io/api/games?key=${process.env["MY_API_KEY"]}`;
 const search_URL = `https://api.rawg.io/api/games?`;
 const details_URL = `https://api.rawg.io/api/games/`;
 const popular_URL = `https://api.rawg.io/api/games/lists/greatest?year=2022&discover=true&ordering=-added&page_size=30&page=1&key=${environment.MY_API_KEY}`;
