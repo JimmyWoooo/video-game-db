@@ -1,0 +1,93 @@
+.header-container{
+    display: flex;
+    align-items: center;
+    background: #121212;
+    padding: .75rem 1rem;
+    justify-content: space-between;
+    width: 100%;
+    // position: fixed;
+    // top: 0;
+    // left: 0;
+    z-index: 5;
+}
+
+.header-title-container{
+    display: flex;
+}
+
+.header-title{
+    font-size: 3rem;
+    z-index: 10;
+    color: white;
+    text-shadow: 0 0 8px white;
+    font-family: 'Akaya Telivigala', cursive;
+}
+
+.controller-svg1,
+.controller-svg2{
+    width: 50px;
+    height: 50px;
+    position: relative;
+    fill: #cacaca;
+}
+
+.controller-svg1{
+    rotate: -20deg;
+    left: 10px;
+}
+
+.controller-svg2{
+    rotate: 30deg;
+    right: 10px;
+}
+
+.header-search-container{
+    display: flex;
+    padding: .5rem 0rem;
+    width: 50%;
+    position: relative;
+}
+
+.header-search{
+    width: 100%;
+    height: 3rem;
+    outline: none;
+    border: none;
+    padding: .5rem;
+    font-size: 1.5rem;
+    border-radius: 8px;
+    font-family: 'Poppins', sans-serif;
+    transition: all .25s ease-out;
+    &:focus{
+        box-shadow: 0 0 12px white;
+    }
+}
+
+.fa-magnifying-glass{
+    font-size: 1.5rem;
+    background: transparent;
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3rem;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    padding: 0rem 1rem;
+    color: #505050;
+}
+
+.header-social{
+    display: flex;
+    justify-content: space-evenly;
+    gap: .75rem;
+    width: 15%;
+}
+
+.fa-brands{
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+}

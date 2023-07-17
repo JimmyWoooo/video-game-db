@@ -1,0 +1,143 @@
+.modal-container{
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 12px;
+}
+
+.modal-close{
+  all: unset;
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+  transition: all .25s ease;
+  &:hover{
+    scale: 1.1;
+  }
+}
+
+.modal-close-svg{
+  font-size: 2rem;
+  color: white;
+  display: flex;
+}
+
+.modal-text{
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+.modal-body-container{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.modal-scrollbox{
+  overflow-y: scroll;
+  width: 100%;
+  // padding: 1rem;
+}
+
+.modal-body{
+  min-height: 100%;
+  position: relative;
+  top: 65%;
+  color: white;
+  padding: 1.5rem;
+  
+  background: linear-gradient(to top, #161616f6, #1f1f1fa6 85%, transparent);
+}
+
+.modal-title {
+  font-size: 5rem;
+  color: white;
+  font-weight: 300;
+  font-family: 'Ysabeau SC', sans-serif;
+  line-height: 85px;
+}
+
+.modal-title.long-title{
+  font-size: 4rem;
+}
+
+.modal-title.very-long-title{
+  font-size: 3.25rem;
+}
+
+.modal-rating{
+  color: white;
+  font-size: 1.25rem;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.modal-star{
+  font-size: 1.75rem;
+  color: rgb(255, 188, 64);
+}
+
+.modal-platform-container{
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+.modal-platform{
+  color: white;
+  display: flex;
+  svg{
+    width: 2rem;
+    height: 2rem;
+    fill: white;
+  }
+  .modal-platform-svg{
+    font-size: 2rem;
+  }
+}
+
+.modal-genre-container{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: .75rem;
+  margin-bottom: 15px;
+}
+
+.modal-genre{
+  color: white;
+  background: rgb(27, 173, 231);
+  border-radius: 4px;
+  padding: 2px 6px;
+  font-size: 1.1rem;
+  cursor: default;
+}
+  
+::ng-deep body .mat-dialog-container{
+    background: rgb(60, 60, 60);
+    overflow: unset;
+    padding: 0;
+    border-radius: 12px;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  display: none;
+}
+
+::-webkit-scrollbar-thumb {
+  background-clip: padding-box;
+  border-radius: 16px;
+  background-color: rgb(15, 15, 15);
+}
