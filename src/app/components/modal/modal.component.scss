@@ -132,12 +132,5 @@
 }
 
 ::-webkit-scrollbar {
-  width: 5px;
   display: none;
-}
-
-::-webkit-scrollbar-thumb {
-  background-clip: padding-box;
-  border-radius: 16px;
-  background-color: rgb(15, 15, 15);
 }
